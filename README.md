@@ -27,8 +27,7 @@ backbone (vision, requirements, architecture, decisions) tracked as docs-as-code
 | [`docs/adr`](docs/adr) | Numbered Architecture Decision Records |
 | [`docs/research`](docs/research) | Spikes and investigation notes (protocols, codecs, transport) |
 
-This is a **monorepo**: docs today; server and client code will be added under
-top-level folders (e.g. `server/`, `clients/`) as the architecture settles
+This is a **monorepo**: docs today; code will be added under `src/` as the architecture settles
 (see [ADR-0002](docs/adr/0002-single-monorepo.md)).
 
 ## Roadmap (phases → milestones)

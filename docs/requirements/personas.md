@@ -20,7 +20,3 @@
 - Away from home (hotel, mobile data). Wants secure access to the library.
 - Constraints: variable/limited bandwidth, untrusted networks, NAT/firewalls,
   smart-TV/casting in unfamiliar environments.
-
-## (Candidate) P4 — The Guest
-
-- Temporary, scoped access? Or explicitly out of scope? _Decide in vision non-goals._

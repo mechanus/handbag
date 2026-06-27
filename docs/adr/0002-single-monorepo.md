@@ -12,8 +12,10 @@ there is no code yet — only docs — and component boundaries are not yet sett
 
 ## Decision
 
-Use a single monorepo. Documentation lives under `docs/` now; application code will be
-added under top-level folders (e.g. `server/`, `clients/`) as the architecture settles.
+Use a single monorepo. Documentation lives under `docs/` now; all application code will
+live under a single top-level `src/` folder, with subfolders for the individual apps and
+shared libraries to be defined as the architecture settles (e.g. `src/server`,
+`src/<client-app>`, `src/<shared-lib>`).
 
 ## Consequences
 
