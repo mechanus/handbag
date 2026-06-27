@@ -47,6 +47,11 @@ Scope is optional but encouraged (`feat(transcode):`, `docs(adr):`).
 - The **PR title is the squashed commit message**, so it must be a valid Conventional
   Commit (we squash-merge; the title becomes history).
 - Link the issue(s) the PR closes (`Closes #NN`).
+- **PR descriptions follow the [template](../../.github/pull_request_template.md)**:
+  *What & why*, optional *Context* / *Review notes*, *Type*, *Checklist*. Delete the
+  optional sections when a change is trivial. PRs opened via `gh pr create --body`
+  bypass the template, so they must populate the same sections by hand rather than
+  improvising an ad-hoc format.
 - Self-review checklist before requesting merge:
   - [ ] CI is green.
   - [ ] Diff reads cleanly top-to-bottom; no stray/debug content.
