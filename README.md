@@ -1,4 +1,4 @@
-# Hearth
+# Handbag
 
 > Codename. A self-hosted, Plex-like home media server: manage a media library on a
 > home server and play it back on devices around the house — and, eventually, remotely

@@ -4,15 +4,15 @@
 > [C4 model](https://c4model.com/) (Context → Container → Component) and capture
 > diagrams as Mermaid where possible so they're diffable in-repo.
 
-## 1. System context (who/what interacts with Hearth)
+## 1. System context (who/what interacts with Handbag)
 
 ```mermaid
 graph TD
-    Operator[P1 Operator] --> Hearth
-    Viewer[P2 Household Viewer] --> Hearth
-    Traveller[P3 Travelling Viewer] --> Hearth
-    Hearth[Hearth System] --> MetaProviders[(External metadata providers)]
-    Hearth --> Storage[(Media storage)]
+    Operator[P1 Operator] --> Handbag
+    Viewer[P2 Household Viewer] --> Handbag
+    Traveller[P3 Travelling Viewer] --> Handbag
+    Handbag[Handbag System] --> MetaProviders[(External metadata providers)]
+    Handbag --> Storage[(Media storage)]
 ```
 
 ## 2. Containers (high-level building blocks)
