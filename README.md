@@ -40,5 +40,5 @@ This is a **monorepo**: docs today; code will be added under `src/` as the archi
 | **M2** | Transcoding |
 | **M3** | Remote access |
 
-See the [Milestones](https://github.com/sixtymage/handbag/milestones) and
-[Project board](https://github.com/sixtymage/handbag/projects) for live status.
+See the [Milestones](https://github.com/mechanus/handbag/milestones) and
+[Project board](https://github.com/orgs/mechanus/projects/1) for live status.
