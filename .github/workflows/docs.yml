@@ -29,7 +29,10 @@ jobs:
       - name: Lint Markdown
         uses: DavidAnson/markdownlint-cli2-action@v19
         with:
-          globs: "**/*.md"
+          # Exclude GitHub form templates — they intentionally don't start with an H1.
+          globs: |
+            **/*.md
+            !.github/**
 
   links:
     runs-on: ubuntu-latest

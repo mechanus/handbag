@@ -11,5 +11,8 @@
 
   // ADRs and READMEs legitimately repeat section names (Context, Decision, ...);
   // only flag duplicate headings under the same parent.
-  "MD024": { "siblings_only": true }
+  "MD024": { "siblings_only": true },
+
+  // Emphasis style (_x_ vs *x*) is cosmetic consistency churn on prose — not worth a gate.
+  "MD049": false
 }
