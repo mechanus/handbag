@@ -115,8 +115,8 @@ they're meaningless without it.
 Every requirement answers "who is this for, and why does it exist?":
 
 - **Persona(s)** — `operator`, `home-user`, `remote-user` (see
-  [personas](../../../docs/requirements/personas.md)). A requirement serving no persona is
-  suspect.
+  [personas](../../../../docs/requirements/personas.md)). A requirement serving no persona
+  is suspect.
 - **Brief driver** — which north-star reason it advances: the learning vehicle, control/
   privacy, or a specific user-facing success criterion. If you can't name one, it probably
   shouldn't exist.
