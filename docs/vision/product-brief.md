@@ -100,6 +100,7 @@ Concrete, observable outcomes — the user-facing bar and the project's actual r
 existing.
 
 **User-facing (it has to actually work):**
+
 - A new movie dropped on the server is watchable in the **main TV room** within minutes,
   with correct metadata and artwork, no manual steps. The main room is a projector + AV
   receiver driven by an **Xbox Series X** (primary playback device), with a **PS4 Pro**
@@ -111,6 +112,7 @@ existing.
   network** — an instance of the control/privacy principle, not a separate goal.
 
 **Learning & craft (why we're building it at all):**
+
 - I can explain, from memory, how every layer works — transcoding, transport, playback,
   remote access — because I built or deliberately chose each one.
 - The project demonstrably advanced my AI practice: documented agent skills/tooling that
@@ -119,11 +121,13 @@ existing.
   reproducible build → test → package → release path.
 
 **Control / privacy (verifiable, not assumed):**
+
 - Nothing in the running product phones home or routes my media or its access control
   through a third party. The build-time/runtime AI split is honoured and auditable.
 - Every load-bearing build-vs-adopt and AI-placement choice is captured as an ADR.
 
 **Fun (the honest one):**
+
 - I still want to work on it. Sustained momentum is itself a signal the approach is right.
 
 ## Explicit non-goals
@@ -157,7 +161,8 @@ the goals do:
   the control/privacy rule.
 - **Done properly, to go faster.** Engineering hygiene and a planned roadmap are the
   enabling structure for AI-assisted speed, not bureaucracy. Process that doesn't earn
-  its keep gets cut. Detailed conventions live in the ways-of-working docs, not here.
+  its keep gets cut. Detailed conventions live in
+  [ways of working](../process/ways-of-working.md), not here.
 - **Finish thin slices first.** Vertical end-to-end over horizontal perfection; limit
   work-in-progress.
 - **Open formats** where it costs nothing to prefer them.

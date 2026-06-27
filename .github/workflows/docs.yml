@@ -1,0 +1,40 @@
+name: docs
+
+# Quality gate for the docs-as-code phase: lint Markdown and verify internal links.
+# Grows test/build/package jobs as code lands (see docs/process/ways-of-working.md).
+on:
+  # Runs on every PR (no path filter) so it can be a *required* status check without
+  # deadlocking code-only PRs that don't touch Markdown. Jobs are fast either way.
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          # Exclude GitHub form templates — they intentionally don't start with an H1.
+          globs: |
+            **/*.md
+            !.github/**
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links (offline — verifies relative/internal links resolve)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--offline --no-progress '**/*.md'"
+          fail: true

@@ -1,6 +1,14 @@
 ## What & why
 
-<!-- What does this change and why? Link issues: Closes #NN -->
+<!-- What changes and why. Bullet the notable items. Closes #NN -->
+
+## Context
+
+<!-- Optional: surrounding state, related decisions, what's deferred. Delete if trivial. -->
+
+## Review notes
+
+<!-- Optional: where to look first, anything non-obvious for the reviewer. Delete if none. -->
 
 ## Type
 

@@ -25,6 +25,7 @@ backbone (vision, requirements, architecture, decisions) tracked as docs-as-code
 | [`docs/requirements`](docs/requirements) | Functional & non-functional requirements, personas, use cases |
 | [`docs/architecture`](docs/architecture) | System context, C4 diagrams, domain model |
 | [`docs/adr`](docs/adr) | Numbered Architecture Decision Records |
+| [`docs/process`](docs/process) | How we work: branching, PRs, CI, definition of done |
 | [`docs/research`](docs/research) | Spikes and investigation notes (protocols, codecs, transport) |
 
 This is a **monorepo**: docs today; code will be added under `src/` as the architecture settles
@@ -39,4 +40,5 @@ This is a **monorepo**: docs today; code will be added under `src/` as the archi
 | **M2** | Transcoding |
 | **M3** | Remote access |
 
-See the [Milestones](../../milestones) and [Project board](../../projects) for live status.
+See the [Milestones](https://github.com/sixtymage/handbag/milestones) and
+[Project board](https://github.com/sixtymage/handbag/projects) for live status.
