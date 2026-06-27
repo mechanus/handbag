@@ -1,0 +1,42 @@
+name: docs
+
+# Quality gate for the docs-as-code phase: lint Markdown and verify internal links.
+# Grows test/build/package jobs as code lands (see docs/process/ways-of-working.md).
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".markdownlint.jsonc"
+      - ".github/workflows/docs.yml"
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - ".markdownlint.jsonc"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links (offline — verifies relative/internal links resolve)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--offline --no-progress '**/*.md'"
+          fail: true

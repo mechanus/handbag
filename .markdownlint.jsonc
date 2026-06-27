@@ -1,0 +1,15 @@
+{
+  // Lenient-but-real markdown rules for docs-as-code.
+  // Full rule list: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+  "default": true,
+
+  // We hand-wrap prose to ~90 cols; line length is not a useful gate here.
+  "MD013": false,
+
+  // Allow occasional inline HTML (tables, <br>, details) where Markdown falls short.
+  "MD033": false,
+
+  // ADRs and READMEs legitimately repeat section names (Context, Decision, ...);
+  // only flag duplicate headings under the same parent.
+  "MD024": { "siblings_only": true }
+}

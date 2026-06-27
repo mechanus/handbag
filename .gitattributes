@@ -1,0 +1,25 @@
+# Normalize line endings: store as LF in the repo, regardless of OS.
+* text=auto eol=lf
+
+# Explicitly text
+*.md       text
+*.cs       text
+*.csproj   text
+*.sln      text eol=crlf
+*.json     text
+*.jsonc    text
+*.yml      text
+*.yaml     text
+*.editorconfig text
+
+# Binary assets — never normalize or diff as text
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.ico      binary
+*.pdf      binary
+*.mp4      binary
+*.mkv      binary
+*.woff     binary
+*.woff2    binary

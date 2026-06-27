@@ -157,7 +157,8 @@ the goals do:
   the control/privacy rule.
 - **Done properly, to go faster.** Engineering hygiene and a planned roadmap are the
   enabling structure for AI-assisted speed, not bureaucracy. Process that doesn't earn
-  its keep gets cut. Detailed conventions live in the ways-of-working docs, not here.
+  its keep gets cut. Detailed conventions live in
+  [ways of working](../process/ways-of-working.md), not here.
 - **Finish thin slices first.** Vertical end-to-end over horizontal perfection; limit
   work-in-progress.
 - **Open formats** where it costs nothing to prefer them.
