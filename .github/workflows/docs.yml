@@ -3,16 +3,11 @@ name: docs
 # Quality gate for the docs-as-code phase: lint Markdown and verify internal links.
 # Grows test/build/package jobs as code lands (see docs/process/ways-of-working.md).
 on:
+  # Runs on every PR (no path filter) so it can be a *required* status check without
+  # deadlocking code-only PRs that don't touch Markdown. Jobs are fast either way.
   pull_request:
-    paths:
-      - "**/*.md"
-      - ".markdownlint.jsonc"
-      - ".github/workflows/docs.yml"
   push:
     branches: [main]
-    paths:
-      - "**/*.md"
-      - ".markdownlint.jsonc"
 
 permissions:
   contents: read
