@@ -1,0 +1,22 @@
+name: Spike / Research
+description: A time-boxed investigation to reduce uncertainty before deciding.
+title: "[Spike] "
+labels: ["type/spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question to answer
+      description: The specific uncertainty this spike resolves.
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time-box
+      description: How long are we willing to spend? (e.g. 1 day)
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected output
+      description: What artefact results? (Usually a research note and/or an ADR proposal.)

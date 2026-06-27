@@ -1,0 +1,31 @@
+# --- .NET ---
+bin/
+obj/
+*.user
+*.suo
+.vs/
+artifacts/
+[Tt]est[Rr]esults/
+
+# --- Node ---
+node_modules/
+dist/
+build/
+.cache/
+*.log
+npm-debug.log*
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+appsettings.*.local.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/

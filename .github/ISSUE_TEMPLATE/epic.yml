@@ -1,0 +1,27 @@
+name: Epic
+description: A large body of work spanning multiple features, tied to a milestone.
+title: "[Epic] "
+labels: ["type/epic"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is this epic and why does it matter? Link to vision/requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope / out of scope
+      description: Bound it. What this epic explicitly does and does not cover.
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Related requirements
+      description: FR/NFR IDs this epic delivers (e.g. FR-LIB-001).
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: How we know the epic is complete.

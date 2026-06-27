@@ -1,0 +1,29 @@
+name: Decision
+description: Debate an architectural/design choice that will become an ADR.
+title: "[Decision] "
+labels: ["type/decision", "status/needs-discussion"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: The decision to be made and the forces/constraints at play.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options under consideration
+      description: List the candidate approaches with their tradeoffs.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Leaning / recommendation
+      description: Current preferred option, if any, and why.
+  - type: input
+    id: adr
+    attributes:
+      label: Resulting ADR
+      description: ADR number once recorded (e.g. ADR-0003).
