@@ -18,7 +18,7 @@
 
 | ID | Requirement | Persona | Priority | Status |
 |----|-------------|---------|----------|--------|
-| FR-LIB-001 | The system shall detect new media files added to a watched location without manual intervention. | P1 | P0 | proposed |
-| FR-META-001 | The system shall automatically identify a media item and fetch title, summary, and artwork. | P1/P2 | P0 | proposed |
-| FR-STREAM-001 | The system shall resume playback from the last position per user per item. | P2 | P1 | proposed |
-| FR-REMOTE-001 | The system shall allow authenticated playback from outside the home network without exposing internal services directly. | P3 | P2 | proposed |
+| FR-LIB-001 | The system shall detect new media files added to a watched location without manual intervention. | operator | P0 | proposed |
+| FR-META-001 | The system shall automatically identify a media item and fetch title, summary, and artwork. | operator, home-user | P0 | proposed |
+| FR-STREAM-001 | The system shall resume playback from the last position per user per item. | home-user | P1 | proposed |
+| FR-REMOTE-001 | The system shall allow authenticated playback from outside the home network without exposing internal services directly. | remote-user | P2 | proposed |

@@ -8,9 +8,9 @@
 
 ```mermaid
 graph TD
-    Operator[P1 Operator] --> Handbag
-    Viewer[P2 Household Viewer] --> Handbag
-    Traveller[P3 Travelling Viewer] --> Handbag
+    Operator[Operator] --> Handbag
+    Viewer[Household viewer] --> Handbag
+    Traveller[Travelling viewer] --> Handbag
     Handbag[Handbag System] --> MetaProviders[(External metadata providers)]
     Handbag --> Storage[(Media storage)]
 ```
