@@ -14,7 +14,8 @@ trim_trailing_whitespace = false
 
 # .NET sources (when code lands)
 [*.{cs,csx}]
-indent_size = 4
+indent_style = space
+indent_size = 2
 
 [*.{yml,yaml,json,jsonc}]
 indent_size = 2
